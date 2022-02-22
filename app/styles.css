@@ -1,0 +1,23 @@
+body {
+    background-image: url(../images/poker-table.png);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 4rem;
+}
+
+#message-el {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.7rem;
+}

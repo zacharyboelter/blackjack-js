@@ -19,6 +19,8 @@ body {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     padding: 100px;
     width: 700px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -35,6 +37,13 @@ p {
     font-size: 1.7rem;
 }
 
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
 #start-btn {
     width: 250px;
     color: #83B692;
@@ -44,12 +53,33 @@ p {
     padding: 5px 0;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-    transition: 0.3s;
+    transition: 0.1s;
+    margin-bottom: 10px;
+    border-radius: 8px;
 
 }
 
 #start-btn:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+#new-card-btn {
+    width: 250px;
+    color: #83B692;
+    background-color: #F1D302;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px 0;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transition: 0.1s;
+    border-radius: 8px;
+}
+
+#new-card-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transform: translateY(-2px);
     cursor: pointer;
 }

@@ -1,23 +1,52 @@
 body {
-    background-image: url(../images/poker-table.png);
+    background-color: #B7E3CC;
+    /* background-size: cover; */
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 100px auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+.container {
+    background-color: #83B692;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    padding: 100px;
 }
 
 h1 {
-    color: goldenrod;
+    color: #F1D302;
     font-size: 4rem;
 }
 
 #message-el {
     font-size: 2rem;
+    font-style: italic;
 }
 
 p {
     font-size: 1.7rem;
+}
+
+#start-btn {
+    width: 250px;
+    color: #83B692;
+    background-color: #F1D302;
+    font-size: 2rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transition: 0.3s;
+
+}
+
+#start-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transform: translateY(-5px);
+    cursor: pointer;
 }

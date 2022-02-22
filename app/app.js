@@ -2,6 +2,7 @@
 //Initial variables
 let firstCard = Math.floor(Math.random() * 11) + 2;
 let secondCard = Math.floor(Math.random() * 11) + 2;
+let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -33,7 +34,7 @@ function renderGame() {
     console.log(hasBlackJack);
     console.log(isAlive);
     // Update html 
-    cardsEl.textContent = `Cards: ${firstCard}, ${secondCard}`;
+    cardsEl.textContent = `Cards: ${cards[0]}, ${cards[1]}`;
     sumEl.textContent = `Sum:  ${sum}`;
     messageEl.textContent = `You have ${sum}, ${message}`;
     console.log(`You have ${sum}, ${message}`);

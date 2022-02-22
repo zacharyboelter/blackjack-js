@@ -18,6 +18,7 @@ body {
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     padding: 100px;
+    width: 700px;
 }
 
 h1 {
@@ -39,6 +40,8 @@ p {
     color: #83B692;
     background-color: #F1D302;
     font-size: 2rem;
+    font-weight: bold;
+    padding: 5px 0;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     transition: 0.3s;

@@ -9,8 +9,6 @@ if (sum < 21) {
     console.log('Do you want another card?')
 } else if (sum === 21) {
     console.log('Blackjack! You win!')
-} else if (sum > 21) {
-    console.log('Bust... You lose shithead.')
 } else {
-    console.log('Error')
-}
+    console.log('Bust... You lose shithead.')
+} 

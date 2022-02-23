@@ -64,10 +64,10 @@ function renderGame() {
 
 // new card button with updating document
 function newCard() {
-    console.log('Drawing a new card from the deck!')
-
-    let thirdCard = getRandomNum();
-    sum += thirdCard;
-    cards.push(thirdCard);
-    renderGame();
+    if (hasBlackJack === false && isAlive === true) {
+        let thirdCard = getRandomNum();
+        sum += thirdCard;
+        cards.push(thirdCard);
+        renderGame();
+    }
 }

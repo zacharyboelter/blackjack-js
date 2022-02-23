@@ -34,7 +34,14 @@ function renderGame() {
     console.log(hasBlackJack);
     console.log(isAlive);
     // Update html 
-    cardsEl.textContent = `Cards: ${cards} `;
+    // cardsEl.textContent = `Cards: ${cards} `;
+
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + ' ';
+    }
+
+
     sumEl.textContent = `Sum:  ${sum}`;
     messageEl.textContent = `You have ${sum}, ${message}`;
     console.log(`You have ${sum}, ${message}`);

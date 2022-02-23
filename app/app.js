@@ -1,7 +1,7 @@
 
 //Initial variables
-let firstCard = Math.floor(Math.random() * 11) + 2;
-let secondCard = Math.floor(Math.random() * 11) + 2;
+let firstCard = Math.floor(Math.random() * 10) + 2;
+let secondCard = Math.floor(Math.random() * 10) + 2;
 let cards = [firstCard, secondCard ]
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -52,7 +52,7 @@ function renderGame() {
 function newCard() {
     console.log('Drawing a new card from the deck!')
 
-    let thirdCard = Math.floor(Math.random() * 11) + 2;
+    let thirdCard = Math.floor(Math.random() * 10) + 2;
     sum += thirdCard;
     cards.push(thirdCard);
     renderGame();

@@ -3,7 +3,7 @@
 //set player to object
 let player = {
     name: 'zachary'.toUpperCase(),
-    chips: '$1500'
+    chips: 1500
 }
 let cards = [];
 let sum = 0;
@@ -20,7 +20,7 @@ function getRandomNum() {
     let randomCard = Math.floor(Math.random() * 13) + 1;
     if (randomCard > 10) {
         return 10
-    } else if (randomCard === 11) {
+    } else if (randomCard === 1) {
         return 11
     } else {
         return randomCard;
@@ -36,6 +36,8 @@ function startGame() {
     sum = firstCard + secondCard;
     renderGame();
 }
+
+playerEl.textContent = `${player.name}: $${player.chips}`
 
 
 // Main game logic
@@ -60,7 +62,6 @@ function renderGame() {
         cardsEl.textContent += cards[i] + ' ';
     }
 
-    playerEl.textContent = `${player.name}: ${player.chips}`
     sumEl.textContent = `Sum:  ${sum}`;
     messageEl.textContent = `You have ${sum}, ${message}`;
     console.log(`You have ${sum}, ${message}`);

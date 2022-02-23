@@ -2,7 +2,7 @@
 //Initial variables
 let firstCard = Math.floor(Math.random() * 11) + 2;
 let secondCard = Math.floor(Math.random() * 11) + 2;
-let cards = [firstCard, secondCard]
+let cards = [firstCard, secondCard ]
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -34,7 +34,7 @@ function renderGame() {
     console.log(hasBlackJack);
     console.log(isAlive);
     // Update html 
-    cardsEl.textContent = `Cards: ${cards[0]}, ${cards[1]}`;
+    cardsEl.textContent = `Cards: ${cards} `;
     sumEl.textContent = `Sum:  ${sum}`;
     messageEl.textContent = `You have ${sum}, ${message}`;
     console.log(`You have ${sum}, ${message}`);
@@ -46,6 +46,7 @@ function newCard() {
     console.log('Drawing a new card from the deck!')
 
     let thirdCard = Math.floor(Math.random() * 11) + 2;
-    sum +=thirdCard;
+    sum += thirdCard;
+    cards.push(thirdCard);
     renderGame();
 }

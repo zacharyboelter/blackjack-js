@@ -1,11 +1,9 @@
 
 //Initial variables
-let firstCard = getRandomNum();
-let secondCard = getRandomNum();
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
+let cards = [];
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = '';
 // Query selector variables
 let messageEl = document.querySelector('#message-el');
@@ -22,10 +20,15 @@ function getRandomNum() {
     } else {
         return randomCard;
     }
-} 
+}
 
-// Start game for onclick start game button
+// Start game for onclick start game button ~~ Update initial variables when start game is initiaited
 function startGame() {
+    isAlive = true;
+    let firstCard = getRandomNum();
+    let secondCard = getRandomNum();
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard;
     renderGame();
 }
 

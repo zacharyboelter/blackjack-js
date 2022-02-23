@@ -1,8 +1,8 @@
 
 //Initial variables
-let firstCard = Math.floor(Math.random() * 10) + 2;
-let secondCard = Math.floor(Math.random() * 10) + 2;
-let cards = [firstCard, secondCard ]
+let firstCard = getRandomNum();
+let secondCard = getRandomNum();
+let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -12,6 +12,17 @@ let messageEl = document.querySelector('#message-el');
 let sumEl = document.querySelector('#sum-el');
 let cardsEl = document.querySelector('#cards-el');
 
+
+function getRandomNum() {
+    let randomCard = Math.floor(Math.random() * 13) + 1;
+    if (randomCard > 10) {
+        return 10
+    } else if (randomCard === 11) {
+        return 11
+    } else {
+        return randomCard;
+    }
+} 
 
 // Start game for onclick start game button
 function startGame() {
@@ -52,7 +63,7 @@ function renderGame() {
 function newCard() {
     console.log('Drawing a new card from the deck!')
 
-    let thirdCard = Math.floor(Math.random() * 10) + 2;
+    let thirdCard = getRandomNum();
     sum += thirdCard;
     cards.push(thirdCard);
     renderGame();

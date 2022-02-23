@@ -1,5 +1,10 @@
 
 //Initial variables
+//set player to object
+let player = {
+    name: 'zachary'.toUpperCase(),
+    chips: '$1500'
+}
 let cards = [];
 let sum = 0;
 let hasBlackJack = false;
@@ -9,7 +14,7 @@ let message = '';
 let messageEl = document.querySelector('#message-el');
 let sumEl = document.querySelector('#sum-el');
 let cardsEl = document.querySelector('#cards-el');
-
+let playerEl = document.querySelector('#player-el');
 
 function getRandomNum() {
     let randomCard = Math.floor(Math.random() * 13) + 1;
@@ -55,7 +60,7 @@ function renderGame() {
         cardsEl.textContent += cards[i] + ' ';
     }
 
-
+    playerEl.textContent = `${player.name}: ${player.chips}`
     sumEl.textContent = `Sum:  ${sum}`;
     messageEl.textContent = `You have ${sum}, ${message}`;
     console.log(`You have ${sum}, ${message}`);
